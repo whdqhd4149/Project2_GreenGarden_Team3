@@ -54,7 +54,7 @@ GreenGarden의 관리자 메인 화면입니다.
 | Backend       | Java 17, Spring Boot, Spring MVC       |
 | Security      | Spring Security, OAuth2 Client, BCrypt |
 | Data          | Spring Data JPA, MyBatis               |
-| Database      | Oracle, MySQL                          |
+| Database      | Oracle                                 |
 | API·기타        | Spring Mail, Daum Postcode API         |
 | Infra         | AWS EC2, GitHub Actions                |
 | Collaboration | GitHub, Figma, Slack, Notion           |
@@ -74,7 +74,7 @@ flowchart TD
     C --> D["Controller"]
     D --> E["Service"]
     E --> F["Spring Data JPA·MyBatis"]
-    F --> G["Oracle·MySQL"]
+    F --> G["Oracle"]
 
     C --> H["Google OAuth2"]
     E --> I["Spring Mail"]
