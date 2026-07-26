@@ -300,7 +300,7 @@ Spring Mail을 이용해 입력한 이메일 주소로 6자리 인증코드를 �
 
 ### 일반회원 가입 화면
 
-![일반회원 가입 화면](docs/images/register-general.png)
+![일반회원 가입 화면](docs/images/GeneralRegister.png)
 
 ### 판매회원 가입
 
@@ -310,7 +310,7 @@ Spring Mail을 이용해 입력한 이메일 주소로 6자리 인증코드를 �
 
 ### 판매자 회원가입 화면
 
-![판매자 회원가입 화면](docs/images/register-seller.png)
+![판매자 회원가입 화면](docs/images/SellerRegister.png)
 
 ---
 
