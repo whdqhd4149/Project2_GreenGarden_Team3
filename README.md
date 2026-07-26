@@ -57,13 +57,13 @@ GreenGarden의 관리자 메인 화면입니다.
 | 구분            | 기술                                     |
 | ------------- | -------------------------------------- |
 | Frontend      | HTML5, CSS3, JavaScript, Thymeleaf     |
-| Backend       | Java 17, Spring Boot, Spring MVC       |
+| Backend       | Java, Spring Boot, Spring MVC          |
 | Security      | Spring Security, OAuth2 Client, BCrypt |
 | Data          | Spring Data JPA, MyBatis               |
 | Database      | Oracle                                 |
 | API·기타        | Spring Mail, Daum Postcode API         |
 | Infra         | AWS EC2, GitHub Actions                |
-| Collaboration | GitHub, Figma, Slack, Notion           |
+| Collaboration | GitHub, Figma, Slack                   |
 
 ---
 
