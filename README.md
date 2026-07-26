@@ -69,16 +69,6 @@ GreenGarden의 관리자 메인 화면입니다.
 
 ![GreenGarden 배포 구조](docs/images/greengarden-deployment.svg)
 
-### 배포 구조
-
-```mermaid
-flowchart LR
-    A["GitHub"] --> B["GitHub Actions"]
-    B --> C["Build"]
-    C --> D["AWS EC2"]
-    D --> E["GreenGarden 실행"]
-```
-
 ---
 
 ## 🏗️ 주요 기능
