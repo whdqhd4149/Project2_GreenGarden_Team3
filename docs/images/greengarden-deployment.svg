@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">GreenGarden 배포 구조</title>
+  <desc id="desc">GitHub의 소스 코드가 GitHub Actions를 통해 빌드되고 AWS EC2에 배포되어 GreenGarden 애플리케이션이 실행되는 구조</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}
+      .node{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
+      .source{fill:#eef2ff;stroke:#6366f1}
+      .deploy{fill:#fff7ed;stroke:#f97316}
+      .run{fill:#f0fdf4;stroke:#22c55e}
+      .label{font:600 21px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;fill:#0f172a;text-anchor:middle;dominant-baseline:middle}
+      .sub{font:400 15px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;fill:#475569;text-anchor:middle}
+      .line{fill:none;stroke:#475569;stroke-width:2.5;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="300" rx="20"/>
+
+  <rect class="node source" x="50" y="94" width="210" height="104" rx="14"/>
+  <text class="label" x="155" y="133">GitHub</text>
+  <text class="sub" x="155" y="168">소스 코드</text>
+
+  <path class="line" d="M260 146 H330"/>
+
+  <rect class="node source" x="330" y="94" width="230" height="104" rx="14"/>
+  <text class="label" x="445" y="133">GitHub Actions</text>
+  <text class="sub" x="445" y="168">CI/CD Workflow</text>
+
+  <path class="line" d="M560 146 H630"/>
+
+  <rect class="node deploy" x="630" y="94" width="210" height="104" rx="14"/>
+  <text class="label" x="735" y="133">Build</text>
+  <text class="sub" x="735" y="168">Spring Boot JAR</text>
+
+  <path class="line" d="M840 146 H910"/>
+
+  <rect class="node run" x="910" y="74" width="240" height="144" rx="14"/>
+  <text class="label" x="1030" y="119">AWS EC2</text>
+  <text class="sub" x="1030" y="156">JAR 배포 및 실행</text>
+  <text class="sub" x="1030" y="184">GreenGarden</text>
+</svg>

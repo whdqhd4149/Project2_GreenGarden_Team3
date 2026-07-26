@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">GreenGarden 시스템 아키텍처</title>
+  <desc id="desc">사용자와 관리자의 요청이 Thymeleaf와 JavaScript, Spring Security, Controller, Service, Spring Data JPA와 MyBatis, Oracle로 이어지며 Google OAuth2, Daum Postcode API, Spring Mail이 연동되는 구조</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}
+      .node{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
+      .primary{fill:#eef2ff;stroke:#6366f1}
+      .external{fill:#f0fdf4;stroke:#22c55e}
+      .data{fill:#fff7ed;stroke:#f97316}
+      .label{font:600 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;fill:#0f172a;text-anchor:middle;dominant-baseline:middle}
+      .sub{font:400 16px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;fill:#475569;text-anchor:middle}
+      .line{fill:none;stroke:#475569;stroke-width:2.5;marker-end:url(#arrow)}
+      .dash{stroke-dasharray:8 7}
+      .both{marker-start:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="780" rx="20"/>
+
+  <rect class="node primary" x="430" y="40" width="340" height="74" rx="14"/>
+  <text class="label" x="600" y="77">사용자 · 관리자</text>
+
+  <path class="line" d="M600 114 V154"/>
+
+  <rect class="node primary" x="410" y="155" width="380" height="82" rx="14"/>
+  <text class="label" x="600" y="190">Thymeleaf · JavaScript</text>
+  <text class="sub" x="600" y="218">화면 표시 및 사용자 요청</text>
+
+  <path class="line" d="M600 237 V277"/>
+
+  <rect class="node primary" x="430" y="278" width="340" height="82" rx="14"/>
+  <text class="label" x="600" y="313">Spring Security</text>
+  <text class="sub" x="600" y="341">인증 · 권한 · 자동 로그인</text>
+
+  <path class="line" d="M600 360 V400"/>
+
+  <rect class="node" x="455" y="401" width="290" height="74" rx="14"/>
+  <text class="label" x="600" y="438">Controller</text>
+
+  <path class="line" d="M600 475 V515"/>
+
+  <rect class="node" x="455" y="516" width="290" height="74" rx="14"/>
+  <text class="label" x="600" y="553">Service</text>
+
+  <path class="line" d="M600 590 V630"/>
+
+  <rect class="node data" x="370" y="631" width="460" height="78" rx="14"/>
+  <text class="label" x="600" y="661">Spring Data JPA · MyBatis</text>
+  <text class="sub" x="600" y="691">데이터 조회 및 저장</text>
+
+  <path class="line" d="M600 709 V738"/>
+
+  <rect class="node data" x="490" y="720" width="220" height="54" rx="14"/>
+  <text class="label" x="600" y="747">Oracle</text>
+
+  <path class="line dash" d="M410 196 H230"/>
+  <rect class="node external" x="30" y="155" width="200" height="82" rx="14"/>
+  <text class="label" x="130" y="187">Daum</text>
+  <text class="sub" x="130" y="216">Postcode API</text>
+
+  <path class="line dash both" d="M770 319 H950"/>
+  <rect class="node external" x="950" y="278" width="220" height="82" rx="14"/>
+  <text class="label" x="1060" y="309">Google OAuth2</text>
+  <text class="sub" x="1060" y="339">소셜 로그인</text>
+
+  <path class="line dash" d="M745 553 H950"/>
+  <rect class="node external" x="950" y="512" width="220" height="82" rx="14"/>
+  <text class="label" x="1060" y="543">Spring Mail</text>
+  <text class="sub" x="1060" y="573">이메일 인증</text>
+</svg>
