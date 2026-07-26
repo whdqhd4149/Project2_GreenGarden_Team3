@@ -63,23 +63,11 @@ GreenGarden의 관리자 메인 화면입니다.
 
 ## 🏛️ 시스템 아키텍처
 
-GreenGarden은 Spring Boot 기반의 MVC 구조로 구현했습니다.
+![GreenGarden 시스템 아키텍처](docs/images/greengarden-architecture.svg)
 
-사용자의 요청을 Controller에서 전달받고, Service에서 비즈니스 로직을 처리한 뒤 Spring Data JPA와 MyBatis를 통해 데이터베이스에 접근하도록 구성했습니다.
+### 배포 구조
 
-```mermaid
-flowchart TD
-    A["사용자·관리자"] --> B["Thymeleaf·JavaScript"]
-    B --> C["Spring Security"]
-    C --> D["Controller"]
-    D --> E["Service"]
-    E --> F["Spring Data JPA·MyBatis"]
-    F --> G["Oracle"]
-
-    C --> H["Google OAuth2"]
-    E --> I["Spring Mail"]
-    B --> J["Daum Postcode API"]
-```
+![GreenGarden 배포 구조](docs/images/greengarden-deployment.svg)
 
 ### 배포 구조
 
